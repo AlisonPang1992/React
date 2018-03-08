@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  height: 2150px;
+  width: 1240px;
+  font-size: 40px;
+  background: white;
+}
+.class_header {
+  color: white;
+  height: 136px;
+  width: 1240px;
+  font-size: 40px;
+  background-color: #f4bc41;
+  line-height: 136px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.class_header img {
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.class_header p {
+  margin-left: 500px;
+  display: inline-block;
+}
+.class_header span {
+  float: left;
+  margin-left: 30px;
+}
+#pay_money {
+  margin-top: 136px;
+  height: 230px;
+  background: #f0feff;
+  padding-top: 50px;
+  padding-left: 90px;
+  border-bottom: 3px solid  #979ca0;
+}
+#pay_money img {
+  float: left;
+  margin-top: 20px;
+  height: 140px;
+  width: 140px;
+}
+#pay_money div {
+  float: left;
+  margin-left: 55px;
+}
+#pay_money div h5 {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-bottom: 3px dotted #979ca0;
+}
+#pay_money div p {
+  line-height: 50px;
+  font-size: 30px;
+  margin-top: 20px;
+  border-bottom: 3px dotted #979ca0;
+}
+#payment_select {
+  margin-top: 60px;
+}
+#payment_select .wechart {
+  border-bottom: 3px solid #979ca0;
+}
+#payment_select .pay_L {
+  padding-left: 60px;
+  height: 220px;
+  border-top: 3px solid #979ca0;
+}
+#payment_select .pay_L img {
+  margin-top: 60px;
+  float: left;
+}
+#payment_select .pay_L div {
+  float: left;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+#payment_select .pay_L div h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+#payment_select .pay_L div p {
+  font-size: 30px;
+  line-height: 130px;
+}
+#payment_select .pay_L input {
+  float: right;
+  height: 90px;
+  width: 90px;
+  margin-top: 60px;
+  margin-right: 70px;
+  -webkit-appearance: none;
+}
+#payment_select .active_pay {
+  background: url(imgs/paycheck.png);
+}
+#payment_select .noactive {
+  background: url(imgs/payselect.png);
+}
+#pay_sure {
+  background: #e39d3d;
+  height: 114px;
+  margin-top: 90px;
+  border-radius: 114px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 114px;
+  color: white;
+  font-size: 40px;
+}
+#pay_sure span {
+  font-size: 50px;
+  font-weight: bold;
+}

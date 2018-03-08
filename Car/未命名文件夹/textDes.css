@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  height: 2150px;
+  width: 1240px;
+  font-size: 40px;
+  background: white;
+  background: #eeeeee;
+}
+.class_header {
+  color: white;
+  height: 136px;
+  width: 1240px;
+  font-size: 40px;
+  background-color: #f4bc41;
+  line-height: 136px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  position: relative;
+}
+.class_header img {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  height: 45px;
+  width: 45px;
+}
+.class_header p {
+  text-align: center;
+}
+.class_header span {
+  float: left;
+  margin-left: 30px;
+}
+#item_list {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#item_list .item {
+  overflow: hidden;
+}
+#item_list .item img {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-top: 20px;
+}
+#item_list .item p {
+  float: left;
+  line-height: 80px;
+  margin-left: 60px;
+}
+#item_list .item_detail .bott span {
+  background: url(imgs/bott.png);
+  height: 21px;
+  width: 39px;
+  margin-top: 30px;
+}
+#item_list .item_detail .hidd span {
+  background: url(imgs/hidd.png);
+  height: 38px;
+  width: 24px;
+  margin-top: 20px;
+}
+#item_list .item_detail li {
+  margin-bottom: 25px;
+}
+#item_list .item_detail li .show {
+  display: block;
+}
+#item_list .item_detail li .dis_hidden {
+  display: none;
+}
+#item_list .item_detail li .item_detail_head {
+  background: white;
+  overflow: hidden;
+  padding-left: 30px;
+  line-height: 80px;
+  border-radius: 10px;
+}
+#item_list .item_detail li .item_detail_head span {
+  float: right;
+  margin-right: 20px;
+}
+#item_list .item_detail li .item_detail_head p {
+  float: left;
+}
+#item_list .item_detail li .item_detail_p {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-indent: 2em;
+  background: white;
+  margin-top: 3px;
+}
