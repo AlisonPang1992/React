@@ -32,6 +32,11 @@ body {
   height: 45px;
   width: 45px;
 }
+.class_header #login_header {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
 .class_header p {
   text-align: center;
 }
@@ -167,7 +172,7 @@ section {
 }
 #content_class {
   overflow: hidden ;
-  padding-left: 62px;
+  margin-left: 62px;
 }
 #content_class .img_Ss {
   float: left;
@@ -330,6 +335,9 @@ footer {
   bottom: 40px;
   left: 580px;
 }
+#spans .active_play {
+  background: white;
+}
 #spans span {
   margin-right: 30px;
 }
@@ -359,6 +367,9 @@ footer {
   overflow: hidden ;
   padding-left: 62px;
 }
+#content_home .content_class_home {
+  overflow: hidden;
+}
 #content_home .img_Ss {
   float: left;
   margin-right: 30px;
@@ -370,6 +381,9 @@ footer {
   color: #a4a4a3;
   line-height: 60px;
   margin-top: 60px;
+}
+#content_Peixunf {
+  overflow: hidden;
 }
 .Peixunf {
   float: left;
@@ -401,10 +415,7 @@ footer {
   border-radius: 20px;
   padding: 20px 30px;
 }
-#content_class {
-  margin-top: 240px;
-}
-#content_class li {
+.content_class_home li {
   overflow: hidden;
   padding-left: 60px;
   padding-top: 30px;
@@ -415,30 +426,30 @@ footer {
   height: 290px;
   border-radius: 20px;
 }
-#content_class li img {
+.content_class_home li img {
   float: left;
 }
-#content_class li h4 {
+.content_class_home li h4 {
   float: left;
   margin-left: 20px;
   line-height: 60px;
   font-size: 40px;
 }
-#content_class li p {
+.content_class_home li p {
   float: right;
 }
-#content_class li p span {
+.content_class_home li p span {
   color: #aa2a33;
   font-weight: bold;
 }
-#content_class li hr {
+.content_class_home li hr {
   width: 100%;
   color: #d7d7d7;
   margin-top: 80px;
   border: 3px solid #d7d7d7;
   display: block;
 }
-#content_class li ul li {
+.content_class_home li ul li {
   float: left;
   margin: 0px;
   height: 80px;
@@ -446,11 +457,11 @@ footer {
   padding: 10px;
   overflow: hidden;
 }
-#content_class li ul li p {
+.content_class_home li ul li p {
   margin: 0px;
   width: 420px;
 }
-#content_class li ul li p span {
+.content_class_home li ul li p span {
   height: 20px;
   width: 20px;
   border-radius: 10px;
