@@ -316,8 +316,15 @@ footer {
   overflow: hidden;
   position: relative;
 }
+#Ad ul {
+  position: absolute;
+  left: -1240px;
+  width: 3720px;
+  transition: 1s;
+}
 #Ad li {
   float: left;
+  transition: 1s;
 }
 #Ad img {
   height: 620px;
