@@ -7,7 +7,8 @@ import {
 import './App.css';
 import SwiperM from './SwiperM'
 import data from './data';
-import NoteM from './NoteM'
+import NoteM from './NoteM';
+import ClassM from './Class'
 
 
 class PeiS extends Component {
@@ -37,6 +38,9 @@ class HomeM extends Component {
                 return <PeiS key={i} attr={attr} mon={e[attr]} />
             }
         })
+        let classm=data.Class.map((e,i)=>{
+            return <ClassM key={i} data={e} />
+        })
     
       return (
         <div>
@@ -59,7 +63,7 @@ class HomeM extends Component {
                     {Peixunf}
                 </div>
                 <ul className='content_class_home'>
-                <li>
+                {/* <li>
                     <img src={require("./imgs/Stars.png")} />
                     <h4>C1特惠班</h4>
                     <p><span>2450</span>元</p>
@@ -138,7 +142,8 @@ class HomeM extends Component {
                         <p><span></span>自营驾培教练</p>
                     </li>
                     </ul>
-                </li>
+                </li> */}
+                {classm}
                 </ul>
                 <div id='foot_div'></div>
             </section>

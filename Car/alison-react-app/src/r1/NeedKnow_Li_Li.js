@@ -35,10 +35,10 @@ class NeedKnow_Li_Li extends Component {
         console.log(i,num)
     
       return (
-        <li className={i==num?'bott':'hidd'}>
+        <li className={i==num?'bott':'hidd'} onClick={this.click} >
             <div className='item_detail_head'> 
                 {list}
-                <span onClick={this.click}></span>
+                <span ></span>
             </div>
             <div className={i==num?'item_detail_p show':'item_detail_p dis_hidden'}>
                 {ppp}

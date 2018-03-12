@@ -14,9 +14,6 @@ class PayChangeM extends Component {
         mon:0
       }
     } 
-    click=()=>{
-        this.props.history.goBack()
-    }
     add=()=>{
         this.setState({
             mon:this.state.mon+this.state.ori
@@ -24,7 +21,7 @@ class PayChangeM extends Component {
     }
     del=()=>{
         let num=this.state.mon-this.state.ori;
-        if(num<0)num=0
+        if(num<this.state.ori)num=this.state.ori
         this.setState({
             mon:num
         });
@@ -39,9 +36,11 @@ class PayChangeM extends Component {
                 }
             }
         }
+        var mon1=mon
+        if(arr[3])mon1=arr[3]*1
         this.setState({
             ori:mon,
-            mon:mon
+            mon:mon1
         });
     }
 
@@ -50,13 +49,18 @@ class PayChangeM extends Component {
       return (
         <div>
              <header className="class_header">
-                <span onClick={this.click} >{'<'}</span>
+                <Link to='/home'>
+                <span>{'<'}</span>
+                </Link>
                 <p>{arr[2]}</p> 
             </header>
             <div id='pay_add'>
-                <h3>输入金额: </h3> <p><span onClick={this.del} >-</span><strong>{this.state.mon}</strong><span onClick={this.add}>+</span></p>
+                <h3>输入金额: </h3> <p>
+                <span onClick={this.del} >-</span>
+                <strong>{this.state.mon}</strong>
+                <span onClick={this.add}>+</span></p>
                 <div>
-                    <Link to='/pay'  >
+                    <Link to={'/pay/'+arr[2]+'='+this.state.mon}  >
                         缴费
                     </Link>
                 </div>

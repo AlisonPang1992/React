@@ -563,3 +563,38 @@ footer p {
   font-size: 50px;
   font-weight: bold;
 }
+.full-tip-box {
+  position: fixed;
+  top: -100px;
+  z-index: 1001;
+  text-align: center;
+  width: 500px;
+  margin:0 auto;
+  left: 360px;
+  transition: 1s;
+}
+.full-tip {
+  display: inline-block;
+  border-radius: 10px;
+  background: rgba(255, 168, 38, 0.7);
+  font-weight: bold;
+}
+.full-tip .inner {
+  position: relative;
+  display: inline-block;
+}
+/* .full-tip .ico {
+  position: absolute;
+  left: 38px;
+  top: 0;
+  width: 24px;
+  height: 32px;
+  background: url(img/full-tip-s.png) no-repeat 0 4px;
+} */
+.full-tip .tip-text {
+  display: inline-block;
+  padding: 8px 38px 10px 70px;
+  color: #000;
+  line-height: 60px;
+  font-size: 16px;
+}

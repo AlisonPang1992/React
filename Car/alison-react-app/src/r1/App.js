@@ -11,7 +11,8 @@ import NoteM from './NoteM'
 import HomeM from './Home'
 import NeedKnow from './NeedKnow'
 import PayChangeM from './PayChangrM'
-import PayM from './PayM'
+import PayM from './PayM';
+import ClassDetailM from './ClassDetailM'
 
 class App extends Component {
     constructor(){
@@ -24,11 +25,12 @@ class App extends Component {
       return (
         <Switch>
             <Route exact path="/" component={HomeM}/>
-            
+
             <Route exact path="/home" component={HomeM}/>
             <Route path="/needknow" component={NeedKnow}/>
             <Route path="/paychange" component={PayChangeM}/>
             <Route path="/pay" component={PayM}/>
+            <Route path="/class" component={ClassDetailM}/>
         </Switch>   
       )
     } 
