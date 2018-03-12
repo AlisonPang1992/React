@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 li {
   list-style: none;
 }
@@ -9,7 +13,7 @@ body {
   height: 2150px;
   width: 1240px;
   font-size: 40px;
-  background: white;
+  background: #eeeeee;
 }
 .textDes {
   background: #eeeeee;

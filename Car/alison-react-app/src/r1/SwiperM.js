@@ -24,11 +24,12 @@ class SwiperM extends Component {
     swiper_autoplay=()=>{
         let {swiper,num,swiper_l}=this.state
         let len=swiper.length
+        let left=this.refs.swiper.offsetLeft
 
         this.timer=setInterval(()=>{
             this.setState({
                 time:1,
-                left:this.refs.swiper.offsetLeft*2
+                left:left*2
             },()=>{
                 setTimeout(()=>{
                     num++;         
@@ -47,7 +48,7 @@ class SwiperM extends Component {
                         swiper,
                         swiper_l,
                         num,
-                        left:this.refs.swiper.offsetLeft/2,
+                        left:left,
                         time:0
                     });
                 },1000)
@@ -59,6 +60,9 @@ class SwiperM extends Component {
 
     componentDidMount(){
         this.swiper_autoplay()
+    }
+    componentWillUnmount(){
+        clearInterval(this.timer)
     }
 
     render(){
